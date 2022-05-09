@@ -23,13 +23,15 @@ Users should be able to click the dice and get a random advice:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop](./src/assets/advice-desktop.png)
+![mobile](./src/assets/advice-mobile.png)
+
 
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/lexizuchenna/advice-generator)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://lexizuchenna-advice-generator.netlify.app)
 
 ## My process
 
