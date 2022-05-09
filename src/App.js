@@ -5,7 +5,32 @@ import dice from './assets/icon-dice.svg'
 import divider from './assets/pattern-divider-desktop.svg'
 
 function App() {
-  const [advice, setAdvice] = useState('')
+  const [advice, setAdvice] = useState({
+    slip: {
+      advice: 'Never run with scissors.',
+      id: 40
+    }
+  })
+  
+  // useEffect(() => {
+    
+  //   fetch('https://api.adviceslip.com/advice')
+  //   .then((response) => {
+  //     if(response.ok) {
+  //       return response.json()
+  //     }
+  //     throw response
+  //   })
+  //   .then((data) => {
+  //     setAdvice(data)
+  //     console.log(advice)
+  //   })
+  //   .catch((error) => {
+  //     console.error(error);
+  //   })
+      
+    
+  // }, [advice])
   
 
   const getAdvice = () => {
@@ -34,7 +59,7 @@ function App() {
             <h4>advice #{advice?.slip?.id}</h4>
           </div>
           <div className="box-body">
-            <p>{advice?.slip?.advice}</p>
+            <h1>“{advice?.slip?.advice}”</h1>
           </div>
           <div className="divider">
             <img src={divider} alt="divider" />
